@@ -4,17 +4,42 @@ const { Schema } = mongoose;
 
 // Create a new schema
 const WorkoutSchema = new Schema({
-  type: String,
-  name: String,
-  duration: Number,
-  distance: Number,
-  weight: Number,
-  reps: Number,
-  sets: Number,
+  date: {
+    type: Date,
+    default: Date.now,
+  },
+  exercises: [
+    {
+      type: {
+        type: String,
+        trim: true,
+        required: "Indicate the type of training.",
+      },
+      name: {
+        type: String,
+        trim: true,
+        required: "Enter a name for your workout.",
+      },
+      duration: {
+        type: Number,
+        required: "Length of your workout",
+      },
+      distance: {
+        type: Number,
+      },
+      weight: {
+        type: Number,
+      },
+      reps: {
+        type: Number,
+      },
+      sets: {
+        type: Number,
+      },
+    },
+  ],
 });
-
-// do I need to add type: Date, default: Date.now ?
 
 const Workout = mongoose.model("Workout", WorkoutSchema);
 
-module.export = Workout;
+module.exports = Workout;
