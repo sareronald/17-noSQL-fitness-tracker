@@ -24,11 +24,18 @@ app.use(express.static("public"));
 
 // Connecting to Mongo Atlas (running databse in the cloud)
 // workoutdb database
-const databaseUrl = `mongodb+srv://sareronald:${encodeURIComponent(
-  process.env.MONGO_PWD
-)}@primarycluster0.sxdap.mongodb.net/workoutdb`;
+// const databaseUrl = `mongodb+srv://sareronald:${encodeURIComponent(
+//   process.env.MONGO_PWD
+// )}@primarycluster0.sxdap.mongodb.net/workoutdb`;
 
-mongoose.connect(databaseUrl, { useNewUrlParser: true });
+// mongoose.connect(databaseUrl, { useNewUrlParser: true });
+
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workoutdb", {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+  useCreateIndex: true,
+  useFindAndModify: false,
+});
 
 // Routes
 // ================
