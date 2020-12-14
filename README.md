@@ -9,13 +9,12 @@ This fitness tracker allows the user to view, create and track daily workouts to
 * [User Story](#User-Story)
 * [Link to the App](#Link-to-the-App)
 * [About this project](#About-this-project)
-* [Files](#Files)
 * [Screenshots](#Screenshots)
 * [License](#License)
+* [Contributing](#Contributing)
 * [Issues](#Issues)
 * [Authors](#Authors)
 <br>
-
 
 ## Project Overview
 A consumer will reach their firness goals more quickly when they track their workout progress. This app allows the **user** to view, create and track daily workouts to help them moitor their progress and reach their fitness goals. 
@@ -43,7 +42,6 @@ The user is be able to:
   * Add exercises to a previous workout plan.
   * Add new exercises to a new workout plan.
   * View the combined weight of multiple exercises on the `stats` page.
-<br>
 
 ### **How the app was built** 
 This project uses uses MongoDB(Atlas), Mongoose, Node, Express, Morgan to add (POST), view (GET), edit/update (PUT) a fitness workout with a resistance or cardio exercise. The user's progress can be tracked on the Fitness Tracker Dashboard (/stats) where the workouts are retreived from the databse (GET) and displayed in a visual graph.
@@ -69,12 +67,12 @@ This project uses uses MongoDB(Atlas), Mongoose, Node, Express, Morgan to add (P
 
 ## Screenshots
 #### **Walkthrough of application**
-![]()
+![fitness-tracker-walkthrough](https://user-images.githubusercontent.com/67722377/102028987-d20e3280-3e00-11eb-86b5-373ea64f1bc5.gif)
 <br>
 
-#### **Screenshot of application**
-![]()
-
+## Licence
+- [MIT License](https://opensource.org/licenses/MIT)
+<br>
 
 ## Contributing
 Any contributions are appreciated. Be sure to review the contributing guidelines and code of conduct. By participating, you are expected to uphold this code. Use your best judgement and feel free to propose changes to this document in a pull request. Should you have any questions, feel free to contact me directly using the email below.
