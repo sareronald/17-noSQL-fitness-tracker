@@ -27,7 +27,6 @@ app.use(express.static("public"));
 // const databaseUrl = `mongodb+srv://sareronald:${encodeURIComponent(
 //   process.env.MONGO_PWD
 // )}@primarycluster0.sxdap.mongodb.net/workoutdb`;
-
 // mongoose.connect(databaseUrl, { useNewUrlParser: true });
 
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workoutdb", {
