@@ -31,7 +31,7 @@ SO THAT I am better able to manage my fitness level and goals
 
 ## Link to the App
 Please visit the <a href="https://github.com/sareronald/17-noSQL-fitness-tracker.git">GitHub repository</a> for a copy of the code for this project and application.<br>
-Please visit the <a href="">Fitness Tracker </a>application, hosted on Heroku.
+Please visit the <a href="https://intense-harbor-12651.herokuapp.com/">Fitness Tracker </a>application, hosted on Heroku.
 <br>
 
 ## About this project
